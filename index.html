@@ -59,9 +59,9 @@
     </div>
     <!--hero image-->
 
-    <section id="feature" class="section-p1">
+    <!--<section id="feature" class="section-p1">
       <!--sideshow start-->
-      <div class="slideshow-container">
+    <!--<div class="slideshow-container">
         <div class="slide">
           <img
             src="image/Instagram.png"
@@ -88,47 +88,80 @@
 
           <a class="next" onclick="changeSlide(1)">&#10095;</a>
         </div>
+      </div>-->
+    <!--slideshow end-->
+    <!--</section>-->
+
+    <div class="slider">
+      <div class="slide">
+        <img
+          src="image/Instagram.png"
+          alt="Slide 1"
+          onmouseover="changeImage('image/jacket.jpg')"
+          onmouseout="changeImage('image/Instagram.png')"
+        />
       </div>
-      <!--slideshow end-->
-    </section>
+      <div class="slide">
+        <img
+          src="image/Cottagecore Embroidered Collar Shirt - S.jpg"
+          alt="Slide 2"
+          onmouseover="changeImage('image/Menjacket.jpg')"
+          onmouseout="changeImage('image/Cottagecore Embroidered Collar Shirt - S.jpg')"
+        />
+      </div>
+      <div class="slide">
+        <img
+          src="image/brownhorses.jpg"
+          alt="Slide 3"
+          onmouseover="changeImage('image/world.jpg')"
+          onmouseout="changeImage('image/brownhorses.jpg')"
+        />
+      </div>
+      <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+      <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
 
     <!--product1 details -->
     <section id="product">
       <div class="pro">
         <img src="image/Instagram.png" alt="" />
       </div>
-      <div class="price" alt="">
-        <h1>CRAVED JACKET</h1>
-        <h1>Rs 12000</h1>
-        <a href="#"
-          ><span class="material-symbols-outlined">shopping_bag</span></a
-        >
-      </div>
+
       <div class="box">
+        <div class="price">
+          <h1>CRAVED JACKET</h1>
+          <h2>Rs 12000</h2>
+          <a href="#">
+            <span class="material-symbols-outlined">shopping_bag</span>
+          </a>
+        </div>
+
         <p>
-          this jacket is handcrafted and is made with the finedt cloths and has
-          detailed emboirdary with the art of blahh blahh blahh blahh
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+          consectetur impedit praesentium, repellat obcaecati mollitia nisi
         </p>
       </div>
     </section>
     <!--product1 details-->
 
     <!--product 2 details-->
-    <section id="product2">
+    <section id="product">
       <div class="pro">
         <img src="image/Cottagecore Embroidered Collar Shirt - S.jpg" alt="" />
       </div>
-      <div class="price" alt="">
-        <h1>CRAVED JACKET</h1>
-        <h1>Rs 12000</h1>
-        <a href="#"
-          ><span class="material-symbols-outlined">shopping_bag</span></a
-        >
-      </div>
+
       <div class="box">
+        <div class="price" alt="">
+          <h1>CRAVED JACKET</h1>
+          <h1>Rs 12000</h1>
+          <a href="#">
+            <span class="material-symbols-outlined">shopping_bag</span></a
+          >
+        </div>
+
         <p>
-          this jacket is handcrafted and is made with the finedt cloths and has
-          detailed emboirdary with the art of blahh blahh blahh blahh
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+          consectetur impedit praesentium, repellat obcaecati mollitia nisi
         </p>
       </div>
     </section>
@@ -141,11 +174,13 @@
           <h4>About Us</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
+
         <div class="footer-column">
           <h4>Contact Us</h4>
           <p>Email: info@example.com</p>
           <p>Phone: 123-456-7890</p>
         </div>
+
         <div class="footer-column">
           <h4>Follow Us</h4>
           <ul class="social-icons">
@@ -161,6 +196,7 @@
           </ul>
         </div>
       </div>
+
       <div class="footer-bottom">
         <p>2023 Your Brand. All rights reserved.</p>
       </div>

@@ -137,14 +137,14 @@ body {
 
 #feature img {
   height: 10%;
-  width: 30%;
+  width: 32.5%;
   padding-top: 0%;
 }
 
 #feature .newarrival {
   width: 100px;
   text-align: center;
-  padding: 25px 15px;
+  padding: 0px 15px;
   box-shadow: 20px 20px 34px rgba(123, 148, 142, 0.947);
   border: 1px solid rgba(123, 148, 142, 0.947);
 }
@@ -219,13 +219,12 @@ body {
 .slide {
   position: relative;
   width: 100%;
-  height: 4000px;
+  height: auto;
   justify-content: center;
 }
 
 .slide img {
   width: 100%;
-  height: 100%;
   vertical-align: top;
   object-fit: cover;
 }
@@ -257,14 +256,79 @@ body {
   right: 10px;
 }
 
+/*new code for slider*/
+.slider {
+  position: relative;
+  width: 100%;
+  height: 600px; /* Set desired height */
+  overflow: hidden;
+  margin: 3em auto;
+}
+
+.slide {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.slide img {
+  margin: 0 auto;
+  width: 400px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  font-weight: bold;
+  padding: 10px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+  left: 10em;
+}
+
+.next {
+  right: 10em;
+}
+
+.active {
+  opacity: 1;
+}
+/*new code for slider*/
+
+#product {
+  display: flex;
+  background-color: rgb(155, 110, 99);
+  margin: 0 0 2em;
+}
+
 #product img {
-  width: 20%;
+  width: 100%;
   height: auto;
 }
 
 #product .pro {
-  padding: 25px 50px;
-  background-color: rgb(155, 110, 99);
+  padding: 3em 5em 3em 15em;
 }
 
 #product .pro img {
@@ -272,12 +336,31 @@ body {
   border: #94a494;
 }
 
-#product .box {
-  align-items: end;
-  padding-right: 25%;
+#product .price h1 {
+  margin: 1em 0 0;
+  color: #fff;
 }
 
-#product2 img {
+#product .price h2 {
+  color: #fff;
+  margin: 0 0 1em 0;
+}
+
+#product .price a {
+  color: #fff;
+}
+
+#product .box {
+  align-items: end;
+  padding-right: 20%;
+}
+
+#product .box p {
+  color: #fff;
+  margin: 1.5em 0;
+}
+
+/*#product2 img {
   width: 20%;
   height: auto;
 }
@@ -295,7 +378,7 @@ body {
 #product2.box {
   align-items: end;
   padding-right: 25%;
-}
+}*/
 
 /*footer*/
 .footer {
@@ -314,6 +397,8 @@ body {
 
 .footer-column {
   flex-basis: 33.33%;
+  margin: 1em;
+  justify-content: center;
 }
 
 .footer-column h4 {
@@ -343,7 +428,7 @@ body {
 }
 
 .footer-bottom {
-  background-color: #7d6e83;
+  background-color: #dfd3c3;
   text-align: center;
   padding: 10px 0;
 }
