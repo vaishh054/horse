@@ -68,17 +68,7 @@ body {
 .products {
   background-color: rgb(155, 110, 99);
   padding: 1em 2em;
-  display: flex;
-  justify-content: center;
-}
-
-.products a {
-  color: #ddd;
-  margin: 0 4em;
-  text-decoration: none;
-}
-
-.products a:hover {
+  text-align: center;
   color: #fff;
 }
 
