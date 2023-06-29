@@ -1,0 +1,179 @@
+@import url("https://fonts.google.com/specimen/Playfair");
+@import url("https://use.fontawesome.com/releases/v5.15.4/css/all.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playfair", sans-serif;
+  /*border: 1px red solid;*/
+}
+h1 {
+  font-size: 33px;
+  line-height: 64px;
+  color: rgb(104, 105, 86);
+}
+
+p {
+  font-size: 20px;
+  color: #94a494;
+}
+.section-p1 {
+  padding: 25% 10%;
+}
+.section-m1 {
+  margin: 40px 0;
+}
+
+body {
+  width: 100%;
+}
+
+/*Header Start */
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 50px;
+    background: #dfd3c3;
+    box-shadow: 0 5px 15px #f8ede3;
+    padding: 1cqmin 10px 5px;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+  
+  #header img {
+    width: 15%;
+    height: 15%;
+    padding-bottom: 0%;
+    padding-top: 0%;
+  }
+  
+  #navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #navbar li {
+    list-style: none;
+    padding: 0 20px;
+  }
+  
+  #navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    transition: 0.3s ease;
+  }
+  
+  #navbar li a:hover {
+    color: rgb(0, 0, 0);
+  }
+  
+  #mobile {
+    display: none;
+    align-items: center;
+  }
+
+  /*touch*/
+  .touch{
+    align-items: center;
+    text-align-last: center;
+  }
+
+  /*contact*/
+  .container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input,
+  textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+  }
+  
+  #message-status {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+
+  /*footer*/
+.footer {
+    background-color: #dfd3c3;
+    color: #fff;
+    padding: 30px 0;
+  }
+  
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-column {
+    flex-basis: 33.33%;
+    margin: 1em;
+    justify-content: center;
+  }
+  
+  .footer-column h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-column p {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .social-icons a {
+    color: #fff;
+    font-size: 20px;
+  }
+  
+  .footer-bottom {
+    background-color: #dfd3c3;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+    font-size: 12px;
+    color: #fff;
+  }
+  
