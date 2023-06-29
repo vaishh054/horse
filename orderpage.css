@@ -1,0 +1,230 @@
+@import url("https://fonts.google.com/specimen/Playfair");
+@import url("https://use.fontawesome.com/releases/v5.15.4/css/all.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playfair", serif;
+  /*border: 1px red solid;*/
+}
+
+body {
+  width: 100%;
+}
+/*Header Start */
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 50px;
+  background: #dfd3c3;
+  box-shadow: 0 5px 15px #f8ede3;
+  padding: 1cqmin 10px 5px;
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+#header img {
+  width: 15%;
+  height: 15%;
+  padding-bottom: 0%;
+  padding-top: 0%;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navbar li {
+  list-style: none;
+  padding: 0 20px;
+}
+
+#navbar li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  transition: 0.3s ease;
+}
+
+#navbar li a:hover {
+  color: rgb(0, 0, 0);
+}
+
+#mobile {
+  display: none;
+  align-items: center;
+}
+
+/*CSS FOR THE ORDER DETAILS CARD*/
+.card {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  justify-content: center;
+  margin: 2em auto;
+  background-color: #f8ede3;
+  width: 50%;
+  height: 80vh;
+}
+
+.card-image img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin: 2em 1em 1em 2em;
+}
+
+.card-details {
+  flex: 1;
+}
+
+.card-details h2 {
+  margin: 0;
+}
+
+.card-details p {
+  margin: 0;
+}
+
+.description {
+  margin: 0em 2em;
+  width: 300px;
+}
+
+.size-dropdown {
+  margin-top: 0;
+  padding: 1em 0;
+}
+
+.size-dropdown select {
+  padding: 1em 1.5em;
+}
+
+.quantity-counter {
+  margin-top: 0;
+  padding: 1em 0;
+}
+
+.quantity-counter button {
+  padding: 1em;
+}
+
+.quantity-counter input {
+  padding: 1em 2em;
+}
+
+.cart-button,
+.buy-button {
+  margin: 10px 10px;
+  padding: 1em 2em;
+  background-color: rgb(155, 110, 99);
+  border: none;
+  color: #fff;
+  border-radius: 0.2em;
+}
+
+.footer {
+  background-color: #dfd3c3;
+  color: #fff;
+  padding: 30px 0;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-column {
+  flex-basis: 33.33%;
+  margin: 1em;
+  justify-content: center;
+}
+
+.footer-column h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-column p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.social-icons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 20px;
+}
+
+.footer-bottom {
+  background-color: #dfd3c3;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 12px;
+  color: #fff;
+}
+
+/* start media query */
+
+@media (max-width: 799px) {
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: #dfd3c3;
+    box-shadow: 0 40px 60px #7d6e83;
+    padding: 80px 0 0 10px;
+    transition: 0.3s;
+  }
+  #navbar.active {
+    right: 0px;
+  }
+  #navbar li {
+    margin-bottom: 25px;
+  }
+  #mobile {
+    display: flex;
+    align-items: center;
+  }
+  #mobile a {
+    color: #fff;
+    font-size: 24px;
+    padding-left: 20px;
+  }
+  #mobile span {
+    color: #fff;
+    font-size: 24px;
+    padding-left: 20px;
+  }
+}
