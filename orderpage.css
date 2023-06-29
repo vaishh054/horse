@@ -118,6 +118,10 @@ body {
 
 .quantity-counter button {
   padding: 1em;
+  border: none;
+  background-color: #fff;
+  box-shadow: 1px 1px 6px #aaa;
+  border-radius: 0.2em;
 }
 
 .quantity-counter input {
@@ -136,6 +140,11 @@ body {
   border: none;
   color: #fff;
   border-radius: 0.2em;
+}
+
+.card-details button:hover {
+  cursor: pointer;
+  background-color: rgb(150, 105, 94);
 }
 
 .footer {
